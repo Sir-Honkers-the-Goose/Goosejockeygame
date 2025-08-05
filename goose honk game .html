@@ -10,7 +10,7 @@
 <body>
 <tw-story><noscript><tw-noscript>JavaScript needs to be enabled to play goose honk game .</tw-noscript></noscript></tw-story>
 <tw-storydata name="goose honk game " startnode="1" creator="Twine" creator-version="2.10.0" format="Harlowe" format-version="3.3.9" ifid="FB0154E9-6312-42FD-812A-C74B0AB701C2" options="" tags="" zoom="1" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="start" tags="" position="575,425" size="100,100">:: Start
-(set: $validNames to (a: &quot;Lord Beackerton Honkcrestfeatherquil&quot;, &quot;Sir Honkers&quot;, &quot;Honkaloth&quot;, &quot;Honkalot&quot;, &quot;Lord feathers&quot;, &quot;Lord Honk&quot;, &quot;Lord Honkington Honkers&quot;, &quot;Sir Goosealot&quot;))
+(set: $validNames to (a: &quot;Lord Beakerton Honkcrest-Featherquill&quot;, &quot;Sir Honkers&quot;, &quot;Honkaloth&quot;, &quot;Honkalot&quot;, &quot;Lord Feathers&quot;, &quot;Lord Honk&quot;, &quot;Lord Honkington Honkers&quot;, &quot;Sir Goosealot&quot;))
 (set: $playerName to &quot;&quot;)
 
 Choose a name from the following options: &lt;&lt;for each _name, ...$validNames&gt;&gt;_name, &lt;&lt;/for&gt;&gt;.
@@ -20,17 +20,17 @@ Choose a name from the following options: &lt;&lt;for each _name, ...$validNames
     (if: $validNames contains $playerName)[
         (goto: &quot;Process Name&quot;)
     ](else:)[
-        You entered &quot;$playerName&quot;, which is not a valid name. Please choose from Sir Honkers, Honkaloth, Honkalot, Lord Feathers, Lord Honk, Lord Honkington Honkers, Sir Beackerton Honkcrestfeatherquil, Sir Goosealot: &lt;&lt;for each _name, ...$validNames&gt;&gt;_name, &lt;&lt;/for&gt;&gt;.
+        You entered &quot;$playerName&quot;, which is not a valid name. Please choose from Sir Honkers, Honkaloth, Honkalot, Lord Feathers, Lord Honk, Lord Honkington Honkers, Sir Beakerton Honkcrest-Featherquill, Sir Goosealot: &lt;&lt;for each _name, ...$validNames&gt;&gt;_name, &lt;&lt;/for&gt;&gt;.
         [[Try Again|Start]]
     ]
 ]:: Process Name
 (if: $playerName is &quot;Sir Honkers&quot; or $playerName is &quot;Honkaloth&quot; or $playerName is &quot;Honkalot&quot;)[
     The geese deliver a specific message, and the story immediately goes to the &quot;Rickroll&quot; passage.
     (goto: &quot;Rickroll&quot;)
-](else-if: $playerName is &quot;Lord Beackerton Honkcrestfeatherquil&quot; or $playerName is &quot;Lord Honkington Honkers&quot; or $playerName is &quot;Sir Goosealot&quot;)[
+](else-if: $playerName is &quot;Lord Beakerton Honkcrest-Featherquill&quot; or $playerName is &quot;Lord Honkington Honkers&quot; or $playerName is &quot;Sir Goosealot&quot;)[
     The geese explain that they need to verify the player&#39;s identity through a quiz. The story goes to the &quot;Quiz Start - Trusted humans&quot; passage.
     (goto: &quot;Quiz Start - Trusted humans&quot;)
-](else-if: $playerName is &quot;Lord Honk&quot; or $playerName is &quot;Lord feathers&quot;)[
+](else-if: $playerName is &quot;Lord Honk&quot; or $playerName is &quot;Lord Feathers&quot;)[
     The geese state that they&#39;re starting a quiz to determine if the player is a human or a goose. The story proceeds to the &quot;Quiz Start - Other Geese&quot; passage.
     (goto: &quot;Haa&quot;)
 ](else:)[
@@ -92,82 +92,77 @@ u are not one of the humans we trust</tw-passagedata><tw-passagedata pid="5" nam
 &lt;div id=&quot;rickroll&quot; class=&quot;hidden&quot;&gt;
   &lt;h2&gt;we are not evil what monster would torture someone with thick of it u would know that if you are one of the humans we trust&lt;/h2&gt;
   &lt;p id=&quot;rickMessage&quot;&gt;&lt;/p&gt;
-  &lt;img src=&quot;https://static-cdn.jtvnw.net/jtv_user_pictures/49ef58727b45eb5b-profile_banner-480.jpeg&quot; class=&quot;geese-img&quot;&gt;
-  &lt;img src=&quot;https://media.tenor.com/q7birHRlX-QAAAAM/cool-geese.gif&quot; class=&quot;geese-img&quot;&gt;
-  &lt;img src=&quot;https://live.staticflickr.com/56/112914414_f1d9fd01ca_z.jpg&quot; class=&quot;geese-img&quot;&gt;&lt;br&gt;&lt;br&gt;
-  &lt;iframe width=&quot;560&quot; height=&quot;315&quot;
+  &lt;img src=&quot;https://static-cdn.jtvnw.net/jtv_user_pictures/49ef58727b45eb5b-profile_banner-480.jpeg&quot; width = &quot;200&quot; class=&quot;geese-img&quot;&gt;&lt;img src=&quot;https://media.tenor.com/q7birHRlX-QAAAAM/cool-geese.gif&quot; class=&quot;geese-img&quot; width = &quot;200&quot; &gt;&lt;img src=&quot;https://live.staticflickr.com/56/112914414_f1d9fd01ca_z.jpg  &quot;class=&quot;geese-img&quot; width = &quot;200&quot;&gt;&lt;br&gt;&lt;br&gt;
+  &lt;iframe width=&quot;380&quot; height=&quot;315&quot;
     src=&quot;https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1&quot;
     frameborder=&quot;0&quot;
     allow=&quot;autoplay; encrypted-media&quot;
     allowfullscreen&gt;
   &lt;/iframe&gt;
 &lt;/div&gt;
-</tw-passagedata><tw-passagedata pid="6" name="falling alseep " tags="" position="550,800" size="100,100">&lt;!-- Rickroll Section --&gt;
+</tw-passagedata><tw-passagedata pid="6" name="è" tags="" position="550,800" size="100,100">&lt;!-- Rickroll Section --&gt;
 &lt;div id=&quot;rickroll&quot; class=&quot;hidden&quot;&gt;
-  &lt;h2&gt;HONK DENIED&lt;/h2&gt;
+  &lt;h2&gt;we like chaos not putting people to sleep u would know that if you were one of the humans we trust &lt;/h2&gt;
   &lt;p id=&quot;rickMessage&quot;&gt;&lt;/p&gt;
-  &lt;img src=&quot;https://static-cdn.jtvnw.net/jtv_user_pictures/49ef58727b45eb5b-profile_banner-480.jpeg&quot; class=&quot;geese-img&quot;&gt;
-  &lt;img src=&quot;https://media.tenor.com/q7birHRlX-QAAAAM/cool-geese.gif&quot; class=&quot;geese-img&quot;&gt;
-  &lt;img src=&quot;https://live.staticflickr.com/56/112914414_f1d9fd01ca_z.jpg&quot; class=&quot;geese-img&quot;&gt;&lt;br&gt;&lt;br&gt;
-  &lt;iframe width=&quot;560&quot; height=&quot;315&quot;
+  &lt;img src=&quot;https://static-cdn.jtvnw.net/jtv_user_pictures/49ef58727b45eb5b-profile_banner-480.jpeg&quot; width = &quot;200&quot; class=&quot;geese-img&quot;&gt;&lt;img src=&quot;https://media.tenor.com/q7birHRlX-QAAAAM/cool-geese.gif&quot; class=&quot;geese-img&quot; width = &quot;200&quot; &gt;&lt;img src=&quot;https://live.staticflickr.com/56/112914414_f1d9fd01ca_z.jpg  &quot;class=&quot;geese-img&quot; width = &quot;200&quot;&gt;&lt;br&gt;&lt;br&gt;
+  &lt;iframe width=&quot;380&quot; height=&quot;315&quot;
     src=&quot;https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1&quot;
     frameborder=&quot;0&quot;
     allow=&quot;autoplay; encrypted-media&quot;
     allowfullscreen&gt;
   &lt;/iframe&gt;
 &lt;/div&gt;
-we like chaos not putting people to sleep u would know that if you were one of the humans we trust</tw-passagedata><tw-passagedata pid="7" name="eee" tags="" position="425,800" size="100,100">&lt;!-- Rickroll Section --&gt;
+</tw-passagedata><tw-passagedata pid="7" name="eee" tags="" position="425,800" size="100,100">&lt;!-- Rickroll Section --&gt;
 &lt;div id=&quot;rickroll&quot; class=&quot;hidden&quot;&gt;
   &lt;h2&gt;u are definitely not one of the humans we trust because they helped us with the practice run &lt;/h2&gt;
   &lt;p id=&quot;rickMessage&quot;&gt;&lt;/p&gt;
-  &lt;img src=&quot;https://static-cdn.jtvnw.net/jtv_user_pictures/49ef58727b45eb5b-profile_banner-480.jpeg&quot; class=&quot;geese-img&quot;&gt;
-  &lt;img src=&quot;https://media.tenor.com/q7birHRlX-QAAAAM/cool-geese.gif&quot; class=&quot;geese-img&quot;&gt;
-  &lt;img src=&quot;https://live.staticflickr.com/56/112914414_f1d9fd01ca_z.jpg&quot; class=&quot;geese-img&quot;&gt;&lt;br&gt;&lt;br&gt;
-  &lt;iframe width=&quot;560&quot; height=&quot;315&quot;
+  &lt;img src=&quot;https://static-cdn.jtvnw.net/jtv_user_pictures/49ef58727b45eb5b-profile_banner-480.jpeg&quot; width = &quot;200&quot; class=&quot;geese-img&quot;&gt;&lt;img src=&quot;https://media.tenor.com/q7birHRlX-QAAAAM/cool-geese.gif&quot; class=&quot;geese-img&quot; width = &quot;200&quot; &gt;&lt;img src=&quot;https://live.staticflickr.com/56/112914414_f1d9fd01ca_z.jpg  &quot;class=&quot;geese-img&quot; width = &quot;200&quot;&gt;&lt;br&gt;&lt;br&gt;
+  &lt;iframe width=&quot;380&quot; height=&quot;315&quot;
     src=&quot;https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1&quot;
     frameborder=&quot;0&quot;
     allow=&quot;autoplay; encrypted-media&quot;
     allowfullscreen&gt;
   &lt;/iframe&gt;
 &lt;/div&gt;
+
 u are definitely not one of the humans we trust because they helped us with the practice run </tw-passagedata><tw-passagedata pid="8" name="e" tags="" position="550,925" size="100,100">&lt;!-- Rickroll Section --&gt;
 &lt;div id=&quot;rickroll&quot; class=&quot;hidden&quot;&gt;
-  &lt;h2&gt;HONK DENIED&lt;/h2&gt;
+  &lt;h2&gt;u are not one of the humans we trust&lt;/h2&gt;
   &lt;p id=&quot;rickMessage&quot;&gt;&lt;/p&gt;
-  &lt;img src=&quot;https://static-cdn.jtvnw.net/jtv_user_pictures/49ef58727b45eb5b-profile_banner-480.jpeg&quot; class=&quot;geese-img&quot;&gt;
-  &lt;img src=&quot;https://media.tenor.com/q7birHRlX-QAAAAM/cool-geese.gif&quot; class=&quot;geese-img&quot;&gt;
-  &lt;img src=&quot;https://live.staticflickr.com/56/112914414_f1d9fd01ca_z.jpg&quot; class=&quot;geese-img&quot;&gt;&lt;br&gt;&lt;br&gt;
-  &lt;iframe width=&quot;560&quot; height=&quot;315&quot;
+  &lt;img src=&quot;https://static-cdn.jtvnw.net/jtv_user_pictures/49ef58727b45eb5b-profile_banner-480.jpeg&quot; width = &quot;200&quot; class=&quot;geese-img&quot;&gt;&lt;img src=&quot;https://media.tenor.com/q7birHRlX-QAAAAM/cool-geese.gif&quot; class=&quot;geese-img&quot; width = &quot;200&quot; &gt;&lt;img src=&quot;https://live.staticflickr.com/56/112914414_f1d9fd01ca_z.jpg  &quot;class=&quot;geese-img&quot; width = &quot;200&quot;&gt;&lt;br&gt;&lt;br&gt;
+  &lt;iframe width=&quot;380&quot; height=&quot;315&quot;
     src=&quot;https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1&quot;
     frameborder=&quot;0&quot;
     allow=&quot;autoplay; encrypted-media&quot;
     allowfullscreen&gt;
   &lt;/iframe&gt;
 &lt;/div&gt;
-u are not one of the humans we trust</tw-passagedata><tw-passagedata pid="9" name="eeee" tags="" position="750,850" size="100,100">https://t4.ftcdn.net/jpg/05/42/45/07/360_F_542450708_dwesQrF3RGuHPsqLO4NgMENyMTbWDMJK.jpg</tw-passagedata><tw-passagedata pid="10" name="q2" tags="" position="825,600" size="100,100">what song is going to be played during the massive honk
+
+u are not one of the humans we trust</tw-passagedata><tw-passagedata pid="9" name="eeee" tags="" position="750,850" size="100,100">here is the overview image of the town u wanted for the massive honk
+(set: _img to &quot;https://thumbs.dreamstime.com/b/isometric-small-town-map-creation-kit-set-simplified-buildings-road-elements-plants-31207983.jpg&quot;)
+(print: &#39;&lt;img src=&quot;&#39; + _img + &#39;&quot; style=&quot;transform: rotate(-5deg); border: 2px solid black; width: 300px;&quot;&gt;&#39;)</tw-passagedata><tw-passagedata pid="10" name="q2" tags="" position="825,600" size="100,100">what song is going to be played during the massive honk
 (button: &quot;Never gonna give u up&quot;) (link: &quot;never gonna give u up&quot;)[(goto:&quot;q3&quot;)] 
 
 (button: &quot;Thick of it&quot;) (link: &quot;Thick of it&quot;)[(goto:&quot;ee&quot;)] 
 
-(button: &quot;Requiem&quot;) (link: &quot;Requiem&quot;)[(goto:&quot;falling alseep&quot;)] 
+(button: &quot;Requiem&quot;) (link: &quot;Requiem&quot;)[(goto:&quot;è&quot;)] 
 </tw-passagedata><tw-passagedata pid="11" name="q3" tags="" position="1050,600" size="100,100">was there a massive honk test run
 (button: &quot;yes&quot;) (link: &quot;yes&quot;)[(goto:&quot;eeee&quot;)] 
 
 (button: &quot;no&quot;) (link: &quot;no&quot;)[(goto:&quot;eee&quot;)] 
 </tw-passagedata><tw-passagedata pid="12" name="Haa" tags="" position="950,800" size="100,100">&lt;!-- Rickroll Section --&gt;
 &lt;div id=&quot;rickroll&quot; class=&quot;hidden&quot;&gt;
-  &lt;h2&gt;that was a fake goose name hwo did u fall for that human and u are nto one of the humans we trust&lt;/h2&gt;
+  &lt;h2&gt;that was a fake goose name hwo did u fall for that human and u are nto one of the humans we trust Haa&lt;/h2&gt;
   &lt;p id=&quot;rickMessage&quot;&gt;&lt;/p&gt;
-  &lt;img src=&quot;https://static-cdn.jtvnw.net/jtv_user_pictures/49ef58727b45eb5b-profile_banner-480.jpeg&quot; class=&quot;geese-img&quot;&gt;
-  &lt;img src=&quot;https://media.tenor.com/q7birHRlX-QAAAAM/cool-geese.gif&quot; class=&quot;geese-img&quot;&gt;
-  &lt;img src=&quot;https://live.staticflickr.com/56/112914414_f1d9fd01ca_z.jpg&quot; class=&quot;geese-img&quot;&gt;&lt;br&gt;&lt;br&gt;
-  &lt;iframe width=&quot;560&quot; height=&quot;315&quot;
+  &lt;img src=&quot;https://static-cdn.jtvnw.net/jtv_user_pictures/49ef58727b45eb5b-profile_banner-480.jpeg&quot; width = &quot;200&quot; class=&quot;geese-img&quot;&gt;&lt;img src=&quot;https://media.tenor.com/q7birHRlX-QAAAAM/cool-geese.gif&quot; class=&quot;geese-img&quot; width = &quot;200&quot; &gt;&lt;img src=&quot;https://live.staticflickr.com/56/112914414_f1d9fd01ca_z.jpg  &quot;class=&quot;geese-img&quot; width = &quot;200&quot;&gt;&lt;br&gt;&lt;br&gt;
+  &lt;iframe width=&quot;380&quot; height=&quot;315&quot;
     src=&quot;https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1&quot;
     frameborder=&quot;0&quot;
     allow=&quot;autoplay; encrypted-media&quot;
     allowfullscreen&gt;
   &lt;/iframe&gt;
 &lt;/div&gt;
+
 Haa</tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">(function(){"use strict";
 var require,define;!function(){var e={},r={};require=function(i){var n=e[i];return n&&(r[i]=n[1].apply(void 0,n[0].map(require)),e[i]=void 0),r[i]},(define=function(r,i,n){if("function"==typeof r)return r();e[r]=[i,n]}).amd=!0}();/*!
